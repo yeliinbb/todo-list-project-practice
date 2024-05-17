@@ -1,4 +1,5 @@
 const ToDoItem = ({ list, setLists }) => {
+    // console.log(list);
     const { title, content, id, isDone } = list;
 
     const deleteButton = () => {
