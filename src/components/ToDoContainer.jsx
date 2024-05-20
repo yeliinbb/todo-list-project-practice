@@ -10,8 +10,9 @@ const ToDoContainer = () => {
     ];
     const [lists, setLists] = useState(initialState);
 
-    const workingLists = lists.filter((list) => !list.isDone);
-    const doneLists = lists.filter((list) => list.isDone);
+    // 다른 값의 데이터 전달해주기
+    const workingLists = lists.filter((list) => !list.isDone); // isDone이 false인 것만 담긴 배열
+    const doneLists = lists.filter((list) => list.isDone); // isDone이 true인 것만 담긴 배열
 
     return (
         <div>
